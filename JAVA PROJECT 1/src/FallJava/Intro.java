@@ -8,7 +8,7 @@ public class Intro {
 }
 	
 	public void sayWord() {
-		String myWord = "hi";
+		String myWord = "hi.";
 		System.out.println(myWord);
 }
 
