@@ -9,7 +9,7 @@ public class OperationsWorksheet {
 			System.out.println(x % 10);
 		}	
 		public void exactAverage(double x, double y) {
-			System.out.print(x * y /2);
+			System.out.print((double)(x + y) /2);
 		}
 		public static void main(String[] args) {
 			
@@ -17,6 +17,6 @@ public class OperationsWorksheet {
 			
 			runner.numToChar(1000);
 			runner.lastDigit(0);
-			runner.exactAverage(2,3);
+			runner.exactAverage(5,7);
 		}
 }
