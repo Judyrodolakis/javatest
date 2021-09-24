@@ -9,10 +9,10 @@ public class Clock {
 		time = num;
 	}
 	public void tick() {
-		time += 1;
+		time = (time+1)%60;
 	}
 	public void displayTime() {	
-		System.out.println(time%60);
+		System.out.println(time);
 	}
 	public static void main(String[] args) {
 		Clock tester = new Clock();
