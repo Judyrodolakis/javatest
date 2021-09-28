@@ -24,6 +24,7 @@ public class HumanMethods {
 		}
 		else {
 			System.out.println("Can vote");
+		}
 	}
 	
 	
@@ -34,39 +35,44 @@ public class HumanMethods {
 		}
 		else {
 			System.out.println("Does not need Tetanus Shot");
+		}
 	}
 	
 	public void toddler() {
 		
 		if ((age < 4) && (gender == 'g')) {
 			System.out.println("Toddler girl");
-			
+		}
 		else if ((age < 4) && (gender == 'b')) {
 			System.out.println("Toddler boy");
-			
+		}
 		else {
-			System.out.println("Not a toddler")
+			System.out.println("Not a toddler");
+		}
+	}
 			
 	
 	public void movieDiscount() {
 				
 		if (age >= 65) {
 			System.out.println("You get Discount");
-					
+		}		
 		else if (age <= 12) {
 			System.out.println("You get Discount");
-					
+		}			
 		else {
-			System.out.println("No discount")
+			System.out.println("No discount");
+		}
+	}
 			
 	
 	public void teenager() {
 				
 		if (12 <= age && age <= 18) {
 			System.out.println("Teenager");
-		
+		}
 		else {
-			System.out.println("Not a teenager")
+			System.out.println("Not a teenager");
 	
 		}
 			
@@ -76,10 +82,25 @@ public class HumanMethods {
 	
 	
 	public static void main(String[] args) {
-		Human runner = 
+		HumanMethods runner = new HumanMethods();
+		
+		runner.setAge(5);
+		
+		runner.setGender('g');
+		
+		runner.canVote();
+		
+		runner.tetanusShot();
+		
+		runner.toddler();
+		
+		runner.movieDiscount();
+		
+		runner.teenager();
 	}
+	
 		
 		
 
 	}
-}
+
